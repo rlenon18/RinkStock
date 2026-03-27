@@ -1,0 +1,17 @@
+<div style="display: flex">
+  <mat-form-field style="width: 90%; margin: auto">
+    <mat-label>Vendor</mat-label>
+    <mat-select
+      required
+      placeholder="Vendor"
+      formControlName="vendor"
+      (selectionChange)="onVendorSelectionChange($event)"
+    >
+      @for (vendor of vendors(); track $index) {
+      <mat-option [value]="vendor">
+        {{ `${vendor.name}` }}
+      </mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+</div>

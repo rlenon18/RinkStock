@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title align="center" style="margin: 1rem">Purchase Order Viewer</mat-card-title>
+  <mat-card-content>
+    <app-vendor-dropdown (selected)="vendorSelected($event)" />
+    <app-purchase-order-dropdown [vendorId] ="this.vendorId()" (selected)="poSelected($event)" />
+    @if (purchaseorder().id > 0) {
+    <mat-card-title style="text-align: center; margin: 1rem">PO # {{ purchaseorder().id }}</mat-card-title>
+    <mat-card-content style="text-align: center; margin: 1rem">{{ purchaseorder().date.substring(0, 10) }}</mat-card-content>
+    } @if (productsForPo().length > 0) {
+      <app-purchase-order-table [products] ="this.productsForPo()"></app-purchase-order-table>
+    }
+
+      	@if (purchaseorder().id > 0) {
+    <div style="display: flex; justify-content: center; margin-top: 1em">
+      <button mat-raised-button type="button" style="color: green" (click)="viewPDF()">
+        View PDF
+      </button>
+    </div>
+    }
+  </mat-card-content>
+</mat-card>

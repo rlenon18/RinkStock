@@ -1,0 +1,14 @@
+import { Routes } from '@angular/router';
+import { Home } from '../app/home/home'
+import { VendorHome } from './vendor/vendor-home/vendor-home'
+import { ProductHome } from './product/product-home/product-home';
+import { PurchaseOrderGenerator } from './purchase-order/purchase-order-generator/purchase-order-generator';
+import { PurchaseOrderViewer } from './purchase-order/purchase-order-viewer/purchase-order-viewer';
+
+export const routes: Routes = [
+  { path: '', component: Home, },
+  { path: 'vendors', component: VendorHome, },
+  { path: 'products', component: ProductHome},
+  { path: 'generator', component: PurchaseOrderGenerator},
+  { path: 'viewer', component: PurchaseOrderViewer}
+];
