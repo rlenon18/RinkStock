@@ -8,8 +8,7 @@ The application consists of:
 
 - A frontend built with Angular
 - A backend service handling API requests and data processing
-
-# User interface with multiple views and routing
+- User interface with multiple views and routing
 - API-driven data flow between frontend and backend
 - Form handling and validation
 - Modular and scalable structure
