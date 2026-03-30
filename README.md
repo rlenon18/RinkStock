@@ -29,5 +29,3 @@ This project was designed with testability in mind. Key testing strategies inclu
   - Data consistency checks across layers
  
 Automated testing frameworks were used via Cypress to further enhance user flow, ui validation and API data extraction accuracy.
-
-Future improvements could include integrating automated testing frameworks such as Cypress or Playwright and incorporating tests into a CI/CD pipeline.
