@@ -14,4 +14,20 @@ The application consists of:
 - Modular and scalable structure
 
 # Testing
-Automated scripts were made to test via Cypress. 
+This project was designed with testability in mind. Key testing strategies include:
+
+- Frontend Testing
+  - Component and UI validation
+  - User flow testing
+  - Mocking API responses for isolated testing
+- Backend Testing
+  - API endpoint validation
+  - Request/response verification
+  - Error handling and edge case testing
+- End-to-End Testing
+  - Full workflow validation from UI to backend
+  - Data consistency checks across layers
+ 
+Automated testing frameworks were used via Cypress to further enhance user flow, ui validation and API data extraction accuracy.
+
+Future improvements could include integrating automated testing frameworks such as Cypress or Playwright and incorporating tests into a CI/CD pipeline.
